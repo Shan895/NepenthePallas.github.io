@@ -1,158 +1,240 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="{% static 'NepenthePallas.github.io/js/prev_next_button.js' %}"></script>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+/* font face */
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", LiSu, sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="w3-black">
 
-<!--<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>-->
-<!--<script src="https://code.highcharts.com/highcharts.js"></script>-->
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="Pictures/Kant.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#book" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>Reading</p>
+  </a>
+  <a href="#fun" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-music w3-xxlarge"></i>
+    <p>Fun</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-<script src="{% static 'NepenthePallas.github.io/js/highchart.js' %}"></script>
-<script src="{% static 'NepenthePallas.github.io/js/highchart_credit.js' %}"></script>
-
-
-
-<link href="{% static 'NepenthePallas.github.io/css/custom.css' %}" rel="stylesheet">
-</head>
-
-
-
-
-
-<!-- Tab navigation -->
-<ul class="nav nav-tabs fixed-top navbar-light bg-light justify-content-center " id="myTab" role="tablist">
-
-
-
-  <li class="nav-item">
-    <a class="nav-link active" id="part1-tab" data-toggle="tab" href="#part1" role="tab" aria-controls="part1" onclick="topFunction()"> Tab 1
-</a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" id="part2-tab" data-toggle="tab" href="#part2" role="tab" aria-controls="part2" onclick="topFunction()">Tab 2</a>
-  </li>
-
-<li class="nav-item">
-    <a class="nav-link" id="part3-tab" data-toggle="tab" href="#part3" role="tab" aria-controls="part3" onclick="topFunction()">Tab 3</a>
-  </li>
-
-</ul>
-<br>
-<br>
-
-
-<!-- Tab content -->
-<div class="tab-content" id="myTabContent">
-
-
-  <div class="tab-pane show active" id="part1" role="tabpanel" aria-labelledby="part1-tab">
-
-
-<div class="card-header bg-transparent mainheader" >
- <h3 class="card-title font-weight-bold mt-3 mb-3"> Instructions </h3>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#book" class="w3-bar-item w3-button" style="width:25% !important">Reading</a>
+    <a href="#fun" class="w3-bar-item w3-button" style="width:25% !important">Fun</a>
   </div>
-      <h4>
-    From Today I am going to work hard.
-    </h4>
-    
-    <p>Nothing "useful" has been done today...<br>
-        The only progress might be that I learnt the human life is one of suffering(Buddism?) <br>
-        But hope grows up in the aching land. <br>
-        Carry on. Don't give in.
-    </p>
-
-    <p>
-    </p>
-    
-<br>
-    <p>
-        This is an experiment in economics of decision-making. A research foundation has provided funds for conducting
-        this research. Your earning will depend on your decisions. The instructions are simple, and if you follow them
-        carefully and make good decisions, you may <b>earn a considerable amount of money</b>.
-            </p>
-<p>
-    During the experiment your payoff will be denominated in experimental points that will be converted into dollars at
-    the end of the experiment at the follow rate:</p>
-      <p>
-    <b>10 Points = 1 Dollar.</b>
-</p>
-            <p> You will start with <b>50 points</b>.</p>
-
-<button onclick="topFunction()" type="button" class="nexttab btn-primary btn next">Next</button>
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-  <div class="tab-pane" id="part2" role="tabpanel" aria-labelledby="part2-tab">
-
-
-<div class="card-header bg-transparent mainheader" >
- <h3 class="card-title font-weight-bold mt-3 mb-3"> Your Experimental Task </h3>
-  </div>
-<br>
-
-      <p>
-          In this experiment, you will trade with a robot seller. <br>
-          There are <b>two periods</b>.  You can buy one item in each period from a robot seller.
-      </p>
-    <p>
-
-        The value of the item for you in each period might be different. <br>
-       <b>The robot seller doesn't know your true value</b> of the item. <br>
-        </p>
-      <p>
-        The seller will set a <b>secret price</b> based on the possible values for each period.<br>
-        The secret price in period 1 might be different from the secret price in period 2.<br>
-          </p>
-      <p>
-        The cost of producing the item for the seller is zero.
-         </p>
-
-
-
-    <button onclick="topFunction()" type="button" class="prevtab btn-primary btn back">Back</button>
-<button onclick="topFunction()" type="button" class="nexttab btn-primary btn next">Next</button>
-  </div>
-
-
-
-
-  <div class="tab-pane" id="part3" role="tabpanel" aria-labelledby="part3-tab">
-
-    <div class="card-header bg-transparent mainheader" >
- <h3 class="card-title font-weight-bold mt-3 mb-3"> Your Experimental Task </h3>
-  </div>
-<br>
-
-      <p>
-          To enter the market, you might need to pay the <b>membership fee</b>. <br>
-          There is no membership fee in the first period.
-      </p>
-
-
-    <p>
-        <b>Only you</b> know your true value when you enter the market.<br>
-        You have to make a <b>bid</b> in each period if you are in the market.<br>
-            </p>
-
-
-    <button onclick="topFunction()" type="button" class="prevtab btn-primary btn back">Back</button>
-<button class="nexttab btn-primary btn next">Next</button>
-
 </div>
-  
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h3 class="w3-jumbo"><span class="w3-hide-small"> Hodgepodge of </span> Nepenthe </h3>
+    <p>All men by nature desire to know.</p>
+    <p> - Aristotle, Metaphisica </p>
+    <br>
+    <br>
+    <img src="Pictures/La_scuola_di_Atene.jpg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">Introduction</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> I feel more confortable to build on something rather than create from blank. Maybe it means I by nature am not much creative. 
+       Lack of descipline might also be my essence. This directly results in my dreadful memory and distressing concentration. 
+      Creating this page is an attempt to save the worse condition. Building on the open source template, I can also learn more on css, jave script, and html at the same time.
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Substance</h3>
+    <p class="w3-wide">Idealism</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Agnosticism </p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+    <p class="w3-wide">Lazism</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div><br>
+    
+
+
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Substratum</h3>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Migraine</span><br>
+        Moderate
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Scolioisis</span><br>
+        Minor 
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">Delusion</span><br>
+        Severe
+      </div>
+    </div>
+
+
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Source of Change</h3>
+    <p class="w3-wide">Time</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:25%"></div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Reading Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="book">
+    <h2 class="w3-text-light-grey">Reading and Writing</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p> “知止而后又定，定而后能静，静而后能安，安而后能虑，虑而后有得。物又本末，事有终始，知所先后，则近道矣。”<br>
+    ——《大学》
+    </p>
+    <p>（不会说话之前就先摘抄吧。）<P>
+
+
+
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Metaphisica</h3>
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      卷一 <br>
+      卷二 <br>
+      卷三
+      
+    </div>
+
+
   
 
+
+
+
+
+
+
+  <!-- Photo Section -->
+  <div class="w3-padding-64 w3-content" id="fun">
+    <h2 class="w3-text-light-grey">On the road</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <h3 class="w3-padding-16 w3-text-light-grey">Sunsets</h3>
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="Pictures/Silhouettes.jpg" style="width:100%">
+
+      </div>
+
+      <div class="w3-half">
+        <img src="Pictures/sunset1.jpg" style="width:100%">
+  
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+
+
+ 
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Fairfax, VA, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 681602</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: nepenthepallas@mail.com</p>
+    </div><br>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
+
 
 
 
